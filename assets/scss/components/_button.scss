@@ -1,0 +1,14 @@
+.btn{
+    padding: .6rem 2.5rem;
+    border: $yellow-1 2px solid;
+    background: transparent;
+    border-radius: 5px;
+    @include text(18px,$yellow-2,600);
+
+
+    &:hover{
+        color: rgb(233, 219, 219);
+        background: $yellow-1;
+        transition: all .3s ease;
+    }
+}

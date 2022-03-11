@@ -1,0 +1,162 @@
+@import './ui/variable';
+@import './ui/fonts';
+@import './ui/global';
+@import './ui/mixins';
+@import './components/button';
+@import './ui/cursor';
+
+
+
+
+
+
+
+// =========== header section ==========
+
+
+header{
+    // position: fixed;
+    // z-index: 100;
+    width: 100%;
+    height: 4rem;
+    // box-shadow: $box-shadow;
+    display: flex;
+    justify-content: space-between;
+    padding: .2rem 5rem;
+    // background-color: $dark;
+    // border-bottom: solid 2px $red;
+
+}
+
+.logo{
+    margin-top: 1rem;
+    justify-content: center;
+    justify-items: center;
+}
+
+.logo-img{
+    width: 70px;
+    height: 65px;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.logo-text{
+    margin-top: 1.2rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.nav{
+    padding-top: 2rem;
+    margin-right: 10rem;
+
+    a{
+        padding-right: 1.2rem;
+        font-size: 1.3rem;
+        // font-family: sans-serif;
+        color:white;
+
+        &:hover{
+            color: $yellow-2;
+        }
+    }
+}
+
+// =========== home section ==========
+
+.home{
+    padding-top: 3rem;
+    padding-left: 5rem;
+}
+
+.home-title{
+    @include text(48px,$yellow-2,bold);
+    line-height: 3.4rem;
+    padding-bottom: 1.4rem;
+
+}
+
+.home-title-2{
+    @include text(23px,#fff,600);
+    padding-bottom: 2rem;
+}
+
+.home-data{
+    @include text(16px,gray,400);
+    line-height: 1.4rem;
+    padding-bottom: 2rem;
+}
+
+// ================== about section ==========
+.about{
+    padding-left: 5rem;
+    padding-top: 2rem;
+}
+
+.about-logo{
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.text-overlay{
+    @include text(64px,#fff,bold);
+    opacity: .1;
+}
+.overlay-logo-text{
+    @include text(35px,#fff,bold);
+    position: absolute;
+    top: 1.8rem;
+    left: .7rem;
+    opacity: .8;
+}
+
+.about-text{
+    @include text(17px,gray,500);
+    padding-bottom: 4rem;
+    
+}
+
+// ============== services section =======
+
+.services{
+    padding-top: 5rem;
+    padding-left: 5rem;
+}
+
+.services-logo{
+    position: relative;
+    padding-bottom: 3rem;
+}
+
+.item{
+    margin-right: 2rem;
+    
+}
+
+.item-card{
+    margin-right: 2rem;
+    width: 350px;
+    height: 300px;
+    // position: absolute;
+
+}
+.item-img{
+    position: absolute;
+    
+    img{
+        width: 350px;
+        height: 300px;
+        border-radius: 20px;
+    }
+}
+
+.item-title{
+    @include text(30px,#fff,bold);
+    position: relative;
+    top: 15rem;
+    left: 2rem;
+    
+}
