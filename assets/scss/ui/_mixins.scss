@@ -1,5 +1,5 @@
 @mixin text($font_size,$font_color,$font_weight) {
-    font-family: "Source Code Variable",sans-serif;
+    font-family: sans-serif;
     font-size: $font_size;
     color: $font_color;
     font-weight: $font_weight;

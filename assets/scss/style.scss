@@ -1,10 +1,9 @@
 @import './ui/variable';
-@import './ui/fonts';
+// @import './ui/fonts';
 @import './ui/global';
 @import './ui/mixins';
 @import './components/button';
 @import './ui/cursor';
-
 
 
 
@@ -126,7 +125,7 @@ header{
     padding-left: 5rem;
 }
 
-.services-logo{
+.services-logo,.contact-logo{
     position: relative;
     padding-bottom: 3rem;
 }
@@ -159,4 +158,99 @@ header{
     top: 15rem;
     left: 2rem;
     
+}
+
+// ============ contact section =======
+.contact{
+    padding-top: 2rem;
+    
+}
+
+
+.form-info{
+    @include text(15px,#fff,500);
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+
+.input-field{
+    // border: none;
+    border-bottom: 2px #000 solid;
+    padding:.5rem 1rem;
+    background: transparent;
+    @include text(16px,gray,bold);
+}
+.rd-line{
+    // margin-top: 3rem;
+}
+
+.checkbox-container{
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding-top: 1.6rem;
+
+}
+
+.checkbox{
+    margin: 10px;
+    padding-bottom: 1rem;
+    label{
+        cursor: pointer;
+    }
+}
+.checkbox label input[type="checkbox"]{
+    display: none;
+}
+
+.checkbox label span{
+    position: relative;
+    border: 2px #fff solid; 
+    padding: .6rem 1.8rem;
+    border-radius: 30px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+    font-size: 20px;
+    transition: .3s ease all;
+
+
+}
+
+.checkbox-container label input[type="checkbox"]:checked ~ span
+{
+	/*display: block;*/
+	color: #fff;
+	box-shadow: 1px 1px 1px $yellow-1;
+	border: 2px solid $yellow-1;
+} 
+
+.checkbox-container div label span:hover{
+	color: $yellow-2;
+}
+
+.project-info{
+    background: transparent;
+    padding-bottom: 0;
+    border-bottom: 2px $yellow-2 solid ;
+
+    
+}
+.contact-project-details{
+    padding-top: 1rem;
+}
+
+.submit-btn{
+    margin-top: 3rem;
+    padding: 1rem 4rem;
+    border: 2px solid $yellow-2;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    background: transparent;
+    color: #fff;
+
+    &:hover{
+        color: $yellow-3;
+    }
+
 }
