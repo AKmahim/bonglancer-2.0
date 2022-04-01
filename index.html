@@ -12,6 +12,8 @@
     <title>Bonglancer - Your digital business solution</title>
 
     <!-- ========== link =========== -->
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     
     <link rel="shortcut icon" href="./assets/img/bonglancer-2.png" type="image/x-icon" />
     <link rel="stylesheet" href="/assets/scss/style.css">
@@ -26,19 +28,23 @@
         <div class="logo flex">
     
             <div class="logo-img"> 
-                <a href="#"><img src="./assets/img/bonglancer-2.png" alt="logo"></a>
+                <a href="#"><img src="./assets/img/Logo.png" alt="logo"></a>
             </div>
     
-            <a href="#" class="logo-text">
+            <a href="bonglancer.com" class="logo-text">
                 Bong lancer
             </a>
         </div>
-        <div class="nav">
+        <div class="nav" id="nav">
             <a href="#home">Home</a>
             <a href="#about">About Us</a>
             <a href="#services">Services</a>
             <a href="#contact">Contact Us</a>
             <a href="#FAQ">FAQ</a>
+        </div>
+        <button class="nav__toggle" id="nav-toggle" onclick="Navbar()"><i class="ri-function-line"></i></button>
+        <!-- <div class="nav__toggle" id="nav-toggle"> -->
+            
         </div>
     </header>
     <section class="section home" id="home">
@@ -75,17 +81,17 @@
         </div>
 
         <p class="about-text">
-                The Digital Panda is a modern creative agency headquartered <br>
-                in Vancouver, Canada. As a distributed team, we bring together <br>
-                top-class talent across the globe, and blur geographic boundaries <br>
-                to make amazing products. <br><br>
-
-                We believe in creative freedom, our process, and the power of good <br> 
-                design. We deliver elegant solutions for our clients business challenges <br> 
-                and partner with inspiring companies, be it an established corporation or <br>
-                a start-up just about to launch. <br><br>
-                
-                Have an idea?<br>
+            Bong Lancer - A Modern Creative Agency Headquartered <br>
+            In Dhaka, Bangladesh. A group of youths, As A Distributed Team, <br>
+            We Bring Together Top-Class Talent Across The Country, And <br>
+            Blur Geographic Boundaries To Make Amazing Products. <br> <br>
+             
+            We Deliver Elegant Solutions For Our Client's Business Challenges. <br>
+            For us a company that is already established or A Start-Up Just About <br>
+            To Launch Our team will create tailored and tactical strategies <br>
+            that will be the path to your success stories. So, let’s go numerically <br>
+            digital, let us tell the world about you! <br><br>
+            *Got An Idea?
         </p>
 
         <a href="#contact" class="btn">Let's talk</a>
@@ -236,7 +242,7 @@
                 </div><br>
 
                 <div class="contact-project-details">
-                    <label for="project-info" >
+                    <label for="project-info first-line " class="input-field2" >
                         A little something about my project &nbsp;
                     </label>
                     <textarea class="input-field project-info" maxlength="5000" name="project-info"  placeholder="My project is about... " id="project-info"spellcheck="false" style="height: 30px; width: 514px;"></textarea>
@@ -248,6 +254,12 @@
             </form>
         </div>
     </section>
+
+    <footer class="copyright">
+        <div >
+
+        </div>
+    </footer>
 
 
 
@@ -261,9 +273,9 @@
 
 
     <!-- preloader part  -->
-    <div class="loader-container">
+    <!-- <div class="loader-container">
         <img src="assets/img/preloader.gif" alt="">
-    </div>
+    </div> -->
 
 
 <!-- =============== js linking ============ -->

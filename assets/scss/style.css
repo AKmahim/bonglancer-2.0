@@ -111,7 +111,9 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: .2rem 5rem;
+  padding: .2rem 3rem;
+  margin-right: 0;
+  padding-right: 0;
 }
 
 .logo {
@@ -123,8 +125,8 @@ header {
 }
 
 .logo-img {
-  width: 70px;
-  height: 65px;
+  width: 50px;
+  height: 50px;
 }
 
 .logo-img img {
@@ -133,9 +135,11 @@ header {
 }
 
 .logo-text {
-  margin-top: 1.2rem;
-  color: white;
-  font-size: 2rem;
+  margin-top: .6rem;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.8rem;
 }
 
 .nav {
@@ -145,12 +149,20 @@ header {
 
 .nav a {
   padding-right: 1.2rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: white;
 }
 
 .nav a:hover {
   color: #F29F05;
+}
+
+.nav__toggle {
+  padding-top: 1.4rem;
+  padding-right: 4rem;
+  color: #F29F05;
+  font-size: 2rem;
+  display: none;
 }
 
 .home {
@@ -215,10 +227,11 @@ header {
 
 .about-text {
   font-family: sans-serif;
-  font-size: 17px;
+  font-size: 20px;
   color: gray;
   font-weight: 500;
   padding-bottom: 4rem;
+  line-height: 1.5rem;
 }
 
 .services {
@@ -263,6 +276,7 @@ header {
 
 .contact {
   padding-top: 2rem;
+  padding-left: 5rem;
 }
 
 .form-info {
@@ -353,5 +367,87 @@ header {
 
 .submit-btn:hover {
   color: #F2B705;
+}
+
+@media screen and (max-width: 992px) {
+  .nav {
+    margin-right: 2rem;
+  }
+  .first-line {
+    line-height: 2.5rem;
+  }
+}
+
+.show-nav {
+  top: 0;
+}
+
+@media screen and (max-width: 769px) {
+  .nav__toggle {
+    display: block;
+    background: transparent;
+  }
+  .nav {
+    position: fixed;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    top: -150%;
+    height: 60%;
+    width: 70%;
+    right: 3rem;
+    background: #333;
+    padding: 5rem;
+    margin-top: 5rem;
+    border-radius: 25px;
+    z-index: 1000;
+  }
+  .nav a {
+    display: block;
+    padding-bottom: 1.2rem;
+  }
+  .home, .about, .services, .contact {
+    padding-left: 2rem;
+  }
+  .services {
+    padding-top: 8rem;
+  }
+  .first-line {
+    line-height: 2rem;
+  }
+  .input-field {
+    margin-bottom: 1.7rem;
+  }
+  .input-field2 {
+    line-height: 3rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about {
+    padding-top: 8rem;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .services {
+    padding-top: 10rem;
+  }
+  .about-text {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: gray;
+    font-weight: 500;
+    padding-bottom: 4rem;
+    line-height: 1.5rem;
+  }
+  .home-title {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 542px) {
+  .services {
+    padding-top: 14rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

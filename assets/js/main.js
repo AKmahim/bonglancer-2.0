@@ -25,12 +25,30 @@ $('.slider-item').slick({
 // 	preloader.style.display = "none";
 // })
 
-function loader(){
-  document.querySelector('.loader-container').classList.add('fade-out');
+// function loader(){
+//   document.querySelector('.loader-container').classList.add('fade-out');
+// }
+
+// function fadeOut(){
+//   setInterval(loader, 2800);
+// }
+
+// window.onload = fadeOut;
+
+
+
+// ========== nav bar ========
+
+function Navbar() {
+  var x = document.getElementById("nav");
+  if (x.style.top === "-150%") {
+    x.style.top = "0%";
+  } else {
+    x.style.top = "-150%";
+  }
 }
 
-function fadeOut(){
-  setInterval(loader, 3000);
-}
-
-window.onload = fadeOut;
+// function Navbar() {
+//   var element = document.getElementById("nav");
+//   element.classList.toggle("show-nav");
+// }
