@@ -18,6 +18,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   background-color: #23262a;
 }
 
@@ -382,7 +383,7 @@ header {
   top: 0;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 780px) {
   .nav__toggle {
     display: block;
     background: transparent;
@@ -448,6 +449,14 @@ header {
 @media screen and (max-width: 542px) {
   .services {
     padding-top: 14rem;
+  }
+  .section {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  .home, .about {
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

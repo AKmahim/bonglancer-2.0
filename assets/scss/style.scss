@@ -299,7 +299,7 @@ header{
     top: 0;
 }
 
-@media screen and (max-width: 769px){
+@media screen and (max-width: 780px){
     .nav__toggle{
         display: block;
         background: transparent;
@@ -382,4 +382,14 @@ header{
         padding-top: 14rem;
     
     }
+    .section{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .home,.about{
+        
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
 }

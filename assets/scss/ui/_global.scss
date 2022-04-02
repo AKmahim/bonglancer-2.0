@@ -20,6 +20,7 @@ html{
 }
 
 body{
+    overflow-x: hidden;
     background-color: $dark;
     // cursor: url(./components/cursor.svg), auto;
 
