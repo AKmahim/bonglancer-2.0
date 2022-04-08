@@ -1,10 +1,11 @@
 @import './ui/variable';
-// @import './ui/fonts';
+@import './ui/fonts';
 @import './ui/global';
 @import './ui/mixins';
 @import './components/button';
 @import './components/preloader';
 @import './ui/cursor';
+@import './components/card';
 
 
 
@@ -18,7 +19,7 @@ header{
     // position: fixed;
     // z-index: 100;
     width: 100%;
-    height: 4rem;
+    height: 5rem;
     // box-shadow: $box-shadow;
     display: flex;
     justify-content: space-between;
@@ -37,8 +38,8 @@ header{
 }
 
 .logo-img{
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 
     img{
         width: 100%;
@@ -46,10 +47,13 @@ header{
     }
 }
 .logo-text{
-    margin-top: .6rem;
-    background: -webkit-linear-gradient(#eee, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    margin-top: .9rem;
+//     background: -webkit-linear-gradient(#eee, #333);
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+    color: #f0f0f0;
+    font-weight: 400;
+    font-family: 'sui-generis', sans-serif;
     font-size: 1.8rem;
 }
 
@@ -146,7 +150,7 @@ header{
 
 .services{
     padding-top: 5rem;
-    padding-left: 5rem;
+    padding-left: 1rem;
 }
 
 .services-logo,.contact-logo{
@@ -154,35 +158,35 @@ header{
     padding-bottom: 3rem;
 }
 
-.item{
-    margin-right: 2rem;
+// .item{
+//     margin-right: 2rem;
     
-}
+// }
 
-.item-card{
-    margin-right: 2rem;
-    width: 350px;
-    height: 300px;
-    // position: absolute;
+// .item-card{
+//     margin-right: 2rem;
+//     width: 350px;
+//     height: 300px;
+//     // position: absolute;
 
-}
-.item-img{
-    position: absolute;
+// }
+// .item-img{
+//     position: absolute;
     
-    img{
-        width: 350px;
-        height: 300px;
-        border-radius: 20px;
-    }
-}
+//     img{
+//         width: 350px;
+//         height: 300px;
+//         border-radius: 20px;
+//     }
+// }
 
-.item-title{
-    @include text(30px,#fff,bold);
-    position: relative;
-    top: 15rem;
-    left: 2rem;
+// .item-title{
+//     @include text(30px,#fff,bold);
+//     position: relative;
+//     top: 15rem;
+//     left: 2rem;
     
-}
+// }
 
 // ============ contact section =======
 .contact{
