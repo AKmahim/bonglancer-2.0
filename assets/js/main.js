@@ -25,15 +25,15 @@ $('.bo').slick({
 // 	preloader.style.display = "none";
 // })
 
-// function loader(){
-//   document.querySelector('.loader-container').classList.add('fade-out');
-// }
+function loader(){
+  document.querySelector('.loader-container').classList.add('fade-out');
+}
 
-// function fadeOut(){
-//   setInterval(loader, 2800);
-// }
+function fadeOut(){
+  setInterval(loader, 2800);
+}
 
-// window.onload = fadeOut;
+window.onload = fadeOut;
 
 
 
