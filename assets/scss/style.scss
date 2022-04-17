@@ -6,7 +6,7 @@
 @import './components/preloader';
 @import './ui/cursor';
 @import './components/card';
-
+@import './components/footer';
 
 
 
@@ -283,7 +283,9 @@ header{
 
 }
 
-
+.address-info p{
+    padding-bottom: 1.1rem;
+}
 
 
 
