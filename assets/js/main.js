@@ -1,6 +1,6 @@
 // ====== slider js ==========
 
-$('.slider-item').slick({
+$('.bo').slick({
     // dots: true,
     arrows:false,
     infinite: true,
