@@ -17,8 +17,10 @@
     
     <link rel="shortcut icon" href="./assets/img/bonglancer-2.png" type="image/x-icon" />
     <link rel="stylesheet" href="/assets/scss/style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     
+    <!-- ============== swipper css =========== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 </head>
 <body>
    
@@ -97,6 +99,9 @@
 
     </section>
 
+
+    <!-- ============= services section =========== -->
+
     <section class="section services" id="services">
             <div class="services-logo">
                 <div class="text-overlay">
@@ -108,110 +113,51 @@
             </div>
 
             <!-- ======== slider ========== -->
-            <!-- <div class="slider_container">
-                <div class="slider-item">
-                    <div class="item">
-                        <div class="item-card">
-                            <div class="item-img">
-                                <img src="./assets/img/web.jpg" alt="">
-                            </div>
-                            <div class="item-title">
-                                Web Development
-                            </div>
-                        </div>
+            <div class="swiper-container services-slider">
+                <div class="swiper-wrapper wrapper">
+                    <div class="swiper-slide slide">
+                        <a href="#">
+                            <img src="./assets/img/animation.jpg" alt="">
+                            <h3 class="slider-title">
+                                Animation
+                            </h3>
+                        </a>
                     </div>
-
-                     <div class="item">
-                        <div class="item-card">
-                            <div class="item-img">
-                                <img src="./assets/img/graphics.jpg" alt="">
-                            </div>
-                            <div class="item-title">
-                                Web Development
-                            </div>
-                        </div>
+                    <div class="swiper-slide slide">
+                        <a href="#">
+                            <img src="./assets/img/seo.jpg" alt="">
+                            <h3 class="slider-title">
+                                SEO 
+                            </h3>
+                        </a>
                     </div>
-
-                     <div class="item">
-                        <div class="item-card">
-                            <div class="item-img">
-                                <img src="./assets/img/marketing.jpg" alt="">
-                            </div>
-                            <div class="item-title">
-                                Web Development
-                            </div>
-                        </div>
+                    <div class="swiper-slide slide">
+                        <a href="#">
+                            <img src="./assets/img/marketing.jpg" alt="">
+                            <h3 class="slider-title">
+                                Marketing 
+                            </h3>
+                        </a>
                     </div>
-
-                     <div class="item">
-                        <div class="item-card">
-                            <div class="item-img">
-                                <img src="./assets/img/seo.jpg" alt="">
-                            </div>
-                            <div class="item-title">
+                    <div class="swiper-slide slide">
+                        <a href="#">
+                            <img src="./assets/img/web.jpg" alt="">
+                            <h3 class="slider-title">
                                 Web Development
-                            </div>
-                        </div>
+                            </h3>
+                        </a>
                     </div>
-
-                     <div class="item">
-                        <div class="item-card">
-                            <div class="item-img">
-                                <img src="./assets/img/animation.jpg" alt="">
-                            </div>
-                            <div class="item-title">
-                                Web Development
-                            </div>
-                        </div>
-                    </div>
-
-                     <div class="item">
-                        <div class="item-card">
-                            <div class="item-img">
-                                <img src="./assets/img/web.jpg" alt="">
-                            </div>
-                            <div class="item-title">
-                                Web Development
-                            </div>
-                        </div>
-                    </div>
-
+                    
 
                 </div>
-            </div> -->
-            <div class="box slider-ite1">
-                <div class="card item">
-                    <div class="card__picture">
-                        <img src="./assets/img/web.jpg" alt="">
-                    </div>
-                    <div class="card__details">
-                        <h2 class="card__details-name">Web Development</h2>
-                    </div>
-                </div>
-                <div class="card item">
-                    <div class="card__picture">
-                        <img src="./assets/img/animation.jpg" alt="">
-                    </div>
-                    <div class="card__details">
-                        <h2 class="card__details-name">Animation</h2>
-                    </div>
-                </div>
-                <div class="card item">
-                    <div class="card__picture">
-                        <img src="./assets/img/graphics.jpg" alt="">
-                    </div>
-                    <div class="card__details">
-                        <h2 class="card__details-name">Graphics Design</h2>
-                    </div>
-                </div>
-                
-                </div>
+                <div class="swiper-pagination"></div>
+
             </div>
 
 
-
     </section>
-
+     
+    <!-- =============== contact section ============= -->
     <section class="section contact" id="contact">
         <div class="contact-logo">
             <div class="text-overlay">
@@ -281,6 +227,9 @@
         </div>
     </section>
 
+
+    <!-- =============== footer =============== -->
+
     <footer id="site-footer">
 
         
@@ -318,15 +267,6 @@
                         <a href="#" class="footer-column-menu-item-link">FAQ</a>
                     </li>
                     <li class="footer-column-menu-item" role="menuitem">
-                        <a href="#" class="footer-column-menu-item-link">Media</a>
-                    </li>
-                    <li class="footer-column-menu-item" role="menuitem">
-                        <a href="#" class="footer-column-menu-item-link">Guides</a>
-                    </li>
-                    <li class="footer-column-menu-item" role="menuitem">
-                        <a href="#" class="footer-column-menu-item-link">Free Resources</a>
-                    </li>
-                    <li class="footer-column-menu-item" role="menuitem">
                         <a href="#" class="footer-column-menu-item-link">Testimonials</a>
                     </li>
                 </ul>
@@ -338,7 +278,7 @@
                         <a href="#" class="footer-column-menu-item-link">About Us</a>
                     </li>
                     <li class="footer-column-menu-item" role="menuitem">
-                        <a href="#" class="footer-column-menu-item-link">Terms of Use</a>
+                        <a href="#" class="footer-column-menu-item-link">Terms of Us</a>
                     </li>
                     <li class="footer-column-menu-item">
                         <a href="#" class="footer-column-menu-item-link" role="menuitem">Legal Information</a>
@@ -380,17 +320,13 @@
 
 
     <!-- preloader part  -->
-    <div class="loader-container">
+    <!-- <div class="loader-container">
         <img src="assets/img/preloader.gif" alt="">
-    </div>
+    </div> -->
 
 
 <!-- =============== js linking ============ -->
-<script
-src="https://code.jquery.com/jquery-3.6.0.min.js"
-integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <script src="./assets/js/main.js"></script>
 

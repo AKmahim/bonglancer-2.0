@@ -1,17 +1,25 @@
-// ====== slider js ==========
 
-$('.bo').slick({
-    // dots: true,
-    arrows:false,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 3,
-    // centerMode: true,
-    // variableWidth: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
+// =========== swiper card =========
 
-  });
+// =========== swiper card =========
+
+var swiper = new Swiper(".services-slider", {
+  // spaceBetween: 30,
+  centeredSlides: true,
+  slidesPerView: 3,
+  autoplay: {
+    delay: 5500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  loop:true,
+  
+});
+
+
 
 
 
