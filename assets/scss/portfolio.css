@@ -101,4 +101,196 @@ a {
   transition: all .1s ease;
   pointer-events: none;
 }
+
+body {
+  overflow-x: hidden;
+}
+
+.cover-img {
+  width: 100vw;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 3rem 2rem;
+  padding-bottom: 5rem;
+}
+
+.bio {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+  background: #f9f9f9;
+  border-radius: 20px;
+  margin: 0 2rem;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.bio .bio_pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.bio .bio_name {
+  font-family: sans-serif;
+  font-size: 2rem;
+  color: #23262a;
+  font-weight: 600;
+  padding-bottom: .6rem;
+}
+
+.bio .bio_title p {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  color: #808080;
+  font-weight: 500;
+  padding-bottom: .3rem;
+}
+
+.bio .bio_title .fiverr-link {
+  text-decoration: none;
+  text-transform: lowercase;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  color: #23262a;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+.bio .bio_title .bio_country {
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  color: #23262a;
+  font-weight: 400;
+  padding-bottom: 1.3rem;
+}
+
+.bio .bio_title .bio_btn {
+  padding: .5rem 3rem;
+}
+
+.bio .social_link {
+  margin-top: 1.3rem;
+}
+
+.bio .social_link h3 {
+  text-transform: capitalize;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  color: #23262a;
+  font-weight: 600;
+  padding-bottom: .6rem;
+}
+
+.bio .social_buttons a:hover i {
+  color: #F29F05;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.bio .social_buttons a i {
+  font-size: 2rem;
+  color: #D96704;
+}
+
+.bio .marketplace_link {
+  padding: 1rem;
+}
+
+.bio .marketplace_link a {
+  display: block;
+  padding: .8rem .5rem;
+  border: 1px solid grey;
+  border-radius: 8px;
+  margin-bottom: .5rem;
+  font-family: sans-serif;
+  font-size: 1rem;
+  color: #808080;
+  font-weight: 600;
+}
+
+.bio .marketplace_link a:hover {
+  background: grey;
+  color: #f9f9f9;
+}
+
+.bio_text h1 {
+  font-family: sans-serif;
+  font-size: 3rem;
+  color: #F29F05;
+  font-weight: 600;
+  padding-bottom: .7rem;
+}
+
+.bio_text .bio_text_title {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  color: #f9f9f9;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+
+.bio_text .bio_text_data {
+  text-transform: lowercase;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  color: #808080;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.bio_text {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+}
+
+.work {
+  padding: 2rem 3rem;
+}
+
+.work h1 {
+  font-family: sans-serif;
+  font-size: 3rem;
+  color: #D96704;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.work h1::before {
+  content: "";
+  width: 13rem;
+  height: 5px;
+  position: absolute;
+  background: #D96704;
+  bottom: -.5rem;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+}
+
+.card img {
+  border-radius: 15px;
+}
 /*# sourceMappingURL=portfolio.css.map */
