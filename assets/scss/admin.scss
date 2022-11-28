@@ -1,0 +1,17 @@
+@import './ui/variable';
+// @import './ui/fonts';
+@import './ui/global';
+@import './ui/mixins';
+@import './components/button';
+// @import './components/preloader';
+@import './ui/cursor';
+
+
+//variable
+
+
+body{
+    // background: #f9f9f9;
+    overflow-x: hidden;
+    
+}
